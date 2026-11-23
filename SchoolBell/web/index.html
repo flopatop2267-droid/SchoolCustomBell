@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Школьный звонок</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🔔 Школьный звонок</h1>
+    <div class="clock" id="clock">--:--:--</div>
+  </header>
+
+  <main>
+    <!-- Status and manual controls -->
+    <section class="card">
+      <h2>Состояние</h2>
+      <p><span id="status-dot" class="dot"></span> <span id="now">Подключение…</span></p>
+      <p>Режим: <strong id="active-profile">—</strong> · Треков: <span id="track-count">0</span></p>
+      <div class="row">
+        <button id="btn-test">▶ Тестовый звонок</button>
+        <button id="btn-stop" class="danger">■ Стоп</button>
+      </div>
+    </section>
+
+    <!-- Schedule editor -->
+    <section class="card">
+      <h2>Расписание</h2>
+      <div class="row">
+        <select id="profile-select" aria-label="Режим расписания"></select>
+        <button id="btn-activate" class="ghost small">Сделать активным</button>
+        <button id="btn-new-profile" class="ghost small">+ Режим</button>
+      </div>
+      <table><tbody id="bells"></tbody></table>
+      <div class="row">
+        <button id="btn-add-bell" class="ghost small">+ Звонок</button>
+        <button id="btn-save-schedule">Сохранить</button>
+      </div>
+    </section>
+
+    <!-- Playlist -->
+    <section class="card">
+      <h2>Музыка</h2>
+      <label>Загрузить MP3 / WAV
+        <input id="upload" type="file" accept=".mp3,.wav" multiple>
+      </label>
+      <ol class="tracks" id="track-list"></ol>
+    </section>
+
+    <!-- Playback settings -->
+    <section class="card">
+      <h2>Настройки</h2>
+      <label>Папка с треками (на этом ПК)
+        <input id="folder" type="text">
+      </label>
+      <label>Длительность звонка, сек
+        <input id="duration" type="number" min="1" max="3600">
+      </label>
+      <label>Затухание в конце, сек
+        <input id="fade" type="number" min="0" max="60">
+      </label>
+      <label>Громкость, %
+        <input id="volume" type="range" min="0" max="100">
+      </label>
+      <label>Порядок треков
+        <select id="mode">
+          <option value="sequential">По порядку</option>
+          <option value="random">Случайно</option>
+        </select>
+      </label>
+      <button id="btn-save-settings">Сохранить настройки</button>
+    </section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>

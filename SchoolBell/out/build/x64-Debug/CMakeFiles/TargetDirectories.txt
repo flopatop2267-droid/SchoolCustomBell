@@ -1,0 +1,3 @@
+C:/Users/user/Desktop/SchoolBell/out/build/x64-Debug/CMakeFiles/school_bell.dir
+C:/Users/user/Desktop/SchoolBell/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/user/Desktop/SchoolBell/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

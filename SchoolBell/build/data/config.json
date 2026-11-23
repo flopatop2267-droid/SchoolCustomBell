@@ -1,0 +1,93 @@
+{
+  "activeProfile": "Regular Day",
+  "durationSec": 60,
+  "fadeSec": 5,
+  "musicFolder": "music",
+  "nextTrackIndex": 0,
+  "playMode": "random",
+  "profiles": [
+    {
+      "bells": [
+        {
+          "enabled": true,
+          "time": "08:15"
+        },
+        {
+          "enabled": true,
+          "time": "08:55"
+        },
+        {
+          "enabled": true,
+          "time": "09:50"
+        },
+        {
+          "enabled": true,
+          "time": "10:30"
+        },
+        {
+          "enabled": true,
+          "time": "10:45"
+        },
+        {
+          "enabled": true,
+          "time": "11:30"
+        },
+        {
+          "enabled": true,
+          "time": "11:45"
+        },
+        {
+          "enabled": true,
+          "time": "12:25"
+        },
+        {
+          "enabled": true,
+          "time": "12:40"
+        },
+        {
+          "enabled": true,
+          "time": "13:20"
+        },
+        {
+          "enabled": true,
+          "time": "13:35"
+        },
+        {
+          "enabled": true,
+          "time": "14:15"
+        },
+        {
+          "enabled": true,
+          "time": "16:44"
+        }
+      ],
+      "name": "Regular Day"
+    },
+    {
+      "bells": [
+        {
+          "enabled": true,
+          "time": "08:30"
+        },
+        {
+          "enabled": true,
+          "time": "09:10"
+        },
+        {
+          "enabled": true,
+          "time": "09:50"
+        },
+        {
+          "enabled": true,
+          "time": "10:30"
+        }
+      ],
+      "name": "Shortened Day"
+    },
+    {
+      "bells": [],
+      "name": "Silence"
+    }
+  ],
+  "volume": 1.0
+}
